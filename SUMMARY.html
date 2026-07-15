@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Summary</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; color: #333; }
+        h1 { border-bottom: 2px solid #2c3e50; color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <h1>Project Summary: Reliable UDP Transport Protocol</h1>
+    <p><strong>Project:</strong> Plivo Systems Challenge</p>
+    <p>This report documents the design of a reliable UDP transport protocol developed to handle hostile network conditions, specifically targeting latency constraints and high packet loss environments.</p>
+    <h2>Technical Highlights</h2>
+    <ul>
+        <li><strong>FEC Strategy:</strong> Implemented a fractional XOR parity scheme (FEC-80) to balance bandwidth usage against recovery speed.</li>
+        <li><strong>ARQ Strategy:</strong> Developed an event-driven NACK system with Triple-Tap redundancy and congestion-aware cooldowns.</li>
+        <li><strong>Validation:</strong> The protocol achieved "VALID" status on Profile A (60ms target) and Profile B (100ms target) while maintaining bandwidth overhead under 2.00x.</li>
+    </ul>
+</body>
+</html>
